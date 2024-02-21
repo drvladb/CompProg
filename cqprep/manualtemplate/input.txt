@@ -1,0 +1,11 @@
+1
+this is how you format test cases
+---
+2
+there must be three dashes
+and a new line, no spaces at the end.
+---
+3
+no dashes
+at the
+end
