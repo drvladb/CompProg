@@ -31,13 +31,15 @@ num_lines = int(input())
 data = []
 for n in range(num_lines):
     # process the line here, append to data
-    inp = input()
-    data.append([])
+    i = input().split(" ")
+    data.append((int(i[0]), int(i[1])))
 
 output = []
 
 # DO PROCESSING HERE
 for point in data:
-    output.append(point + "nope")
+    a = point[0] + point[1]
+    m = point[0] * point[1]
+    output.append(f"{a} {m}")
 
 print("\n".join(output))
