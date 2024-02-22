@@ -1,4 +1,5 @@
 from decimal import Decimal, ROUND_HALF_UP, ROUND_HALF_DOWN
+from math import floor
 
 ##### FUNCTIONS ######
 
@@ -13,7 +14,7 @@ def round_standard(n, d):
 # n - number to round
 # d - decimal places
 # m - rounding mode
-def round_advanced(n, d, m = ROUND_HALF_DOWN):
+def round_advanced(n, d, m = ROUND_HALF_UP):
     # quantize takes 0.1, 0.01 etc.
     return Decimal(n).quantize(Decimal(str(10**-d)), rounding=m)
 

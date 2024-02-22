@@ -8,7 +8,7 @@ import zipfile
 
 solutions = {}
 
-tabulate = "super" # "super" | "regular" | "none"
+tabulate = "regular" # "super" | "regular" | "none"
 
 solnfile = open(list(Path(".").glob("*.zip"))[0], "rb")
 with zipfile.ZipFile(io.BytesIO(solnfile.read())) as thezip:
